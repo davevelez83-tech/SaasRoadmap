@@ -74,6 +74,264 @@ h1{font-family:'Bebas Neue',sans-serif;font-size:3rem;letter-spacing:5px;color:v
   <div>
     <h1>David Velez</h1>
     <p class="subtitle">Hospitality → SaaS · 6-Month Transition Plan · Thailand Bound</p>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>David Velez — 6-Month Career Transition Plan</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#0a0c10;--surface:#111318;--border:#1e2230;
+  --gold:#c9a84c;--gold-dim:#8a6e2f;
+  --teal:#2dd4bf;--teal-dim:#0d3330;
+  --red:#f87171;--green:#4ade80;
+  --text:#e2e8f0;--muted:#64748b;--card:#13161f;
+}
+body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;padding:32px 28px;min-height:100vh}
+h1{font-family:'Bebas Neue',sans-serif;font-size:3rem;letter-spacing:5px;color:var(--gold);line-height:1}
+.subtitle{font-size:.7rem;letter-spacing:3px;text-transform:uppercase;color:var(--muted);margin-top:4px}
+.header{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:1px solid var(--border);padding-bottom:20px;margin-bottom:24px}
+.badge{background:var(--teal-dim);border:1px solid var(--teal);color:var(--teal);font-size:.65rem;letter-spacing:2px;text-transform:uppercase;padding:7px 14px;font-family:'DM Mono',monospace;align-self:flex-start}
+.banner{background:linear-gradient(135deg,#1a1400,#0f1a1a);border:1px solid var(--gold-dim);padding:14px 18px;margin-bottom:24px;font-size:.78rem;line-height:1.7;color:var(--text)}
+.banner strong{color:var(--gold)}
+.section-label{font-family:'Bebas Neue',sans-serif;font-size:1rem;letter-spacing:3px;color:var(--muted);text-transform:uppercase;margin-bottom:12px;display:flex;align-items:center;gap:10px}
+.section-label::after{content:'';flex:1;height:1px;background:var(--border)}
+.gap-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:28px}
+.gap-card{background:var(--card);border:1px solid var(--border);padding:14px 16px}
+.gap-top{display:flex;justify-content:space-between;font-size:.68rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--muted);margin-bottom:8px}
+.gap-top span:last-child{color:var(--text);font-family:'DM Mono',monospace}
+.bar{height:5px;background:var(--border)}
+.bar-fill{height:100%;transition:width 1.2s ease}
+.gold-bar{background:var(--gold)}
+.teal-bar{background:var(--teal)}
+.red-bar{background:var(--red)}
+.green-bar{background:var(--green)}
+.months-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:28px}
+.month-card{background:var(--card);border:1px solid var(--border);padding:16px;cursor:pointer;transition:border-color .2s,transform .15s;position:relative;overflow:hidden}
+.month-card:hover{border-color:var(--gold);transform:translateY(-2px)}
+.month-card.active{border-color:var(--gold)}
+.month-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px}
+.m1::before{background:#c9a84c}.m2::before{background:#2dd4bf}.m3::before{background:#60a5fa}
+.m4::before{background:#a78bfa}.m5::before{background:#4ade80}.m6::before{background:#f87171}
+.month-num{font-family:'DM Mono',monospace;font-size:.6rem;letter-spacing:2px;color:var(--muted);margin-bottom:5px}
+.month-title{font-family:'Bebas Neue',sans-serif;font-size:1.15rem;letter-spacing:2px;margin-bottom:4px}
+.m1 .month-title{color:#c9a84c}.m2 .month-title{color:#2dd4bf}.m3 .month-title{color:#60a5fa}
+.m4 .month-title{color:#a78bfa}.m5 .month-title{color:#4ade80}.m6 .month-title{color:#f87171}
+.month-theme{font-size:.68rem;color:var(--muted);font-style:italic;margin-bottom:10px}
+.task-list{list-style:none}
+.task-list li{font-size:.72rem;color:var(--text);padding:2px 0;display:flex;gap:6px;line-height:1.5}
+.task-list li::before{content:'▸';color:var(--muted);flex-shrink:0}
+.detail-panel{background:var(--card);border:1px solid var(--gold-dim);padding:22px;margin-bottom:28px;display:none}
+.detail-panel.open{display:block}
+.detail-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+.detail-title{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;letter-spacing:3px;color:var(--gold)}
+.close-btn{background:none;border:1px solid var(--border);color:var(--muted);padding:5px 12px;cursor:pointer;font-family:'DM Mono',monospace;font-size:.68rem}
+.detail-cols{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.detail-col h4{font-size:.63rem;letter-spacing:2px;text-transform:uppercase;color:var(--teal);margin-bottom:9px}
+.detail-col p{font-size:.78rem;line-height:1.7;color:var(--text);white-space:pre-line}
+.detail-col ul{list-style:none}
+.detail-col ul li{font-size:.76rem;line-height:1.7;color:var(--text)}
+.detail-col ul li::before{content:'→ ';color:var(--gold)}
+.analogy{background:var(--teal-dim);border-left:3px solid var(--teal);padding:11px 14px;margin-top:12px;font-size:.76rem;line-height:1.6}
+.analogy strong{display:block;font-size:.62rem;letter-spacing:2px;text-transform:uppercase;color:var(--teal);margin-bottom:4px}
+.metrics-row{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.metric{background:var(--card);border:1px solid var(--border);padding:16px;text-align:center}
+.metric-val{font-family:'Bebas Neue',sans-serif;font-size:2.2rem;color:var(--gold);letter-spacing:2px;display:block}
+.metric-lbl{font-size:.62rem;text-transform:uppercase;letter-spacing:2px;color:var(--muted);margin-top:2px}
+.conf{font-family:'DM Mono',monospace;font-size:.6rem;color:var(--muted);text-align:right;margin-top:20px}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <h1>David Velez</h1>
+    <p class="subtitle">Hospitality → SaaS · 6-Month Transition Plan · Thailand Bound</p>
+  </div>
+  <div class="badge">Target: Cloudbeds / Hospitality-Tech</div>
+</div>
+
+<div class="banner">
+  <strong>📋 Baseline Assessment — "Clear starting point. Fundamentals first."</strong><br>
+  Strong hospitality ops, client-handling instincts, bilingual edge, $5M P&amp;L experience, and international mobility. Primary gaps: SaaS vocabulary, spreadsheet fluency, CRM literacy, software demo skills.<br>
+  <strong>Your 20 years of front-line execution is the competitive advantage. We're adding a tech layer on top of a proven foundation.</strong>
+</div>
+
+<div class="section-label">Current Skill Map</div>
+<div class="gap-grid">
+  <div class="gap-card"><div class="gap-top"><span>Hospitality Operations</span><span>9.5 / 10</span></div><div class="bar"><div class="bar-fill gold-bar" style="width:95%"></div></div></div>
+  <div class="gap-card"><div class="gap-top"><span>Client Relations &amp; Retention</span><span>9.0 / 10</span></div><div class="bar"><div class="bar-fill green-bar" style="width:90%"></div></div></div>
+  <div class="gap-card"><div class="gap-top"><span>P&amp;L / Financial Management</span><span>8.0 / 10</span></div><div class="bar"><div class="bar-fill gold-bar" style="width:80%"></div></div></div>
+  <div class="gap-card"><div class="gap-top"><span>SaaS &amp; Tech Fundamentals</span><span>2.5 / 10</span></div><div class="bar"><div class="bar-fill red-bar" style="width:25%"></div></div></div>
+  <div class="gap-card"><div class="gap-top"><span>Spreadsheet / Data Analysis</span><span>3.0 / 10</span></div><div class="bar"><div class="bar-fill red-bar" style="width:30%"></div></div></div>
+  <div class="gap-card"><div class="gap-top"><span>CRM &amp; Software Tools</span><span>2.0 / 10</span></div><div class="bar"><div class="bar-fill red-bar" style="width:20%"></div></div></div>
+</div>
+
+<div class="section-label">6-Month Curriculum — Click Any Month for Details</div>
+<div class="months-grid">
+  <div class="month-card m1" onclick="show(1)">
+    <div class="month-num">Month 01 · Foundation</div>
+    <div class="month-title">SaaS Literacy</div>
+    <div class="month-theme">"Learning the menu before you take tables"</div>
+    <ul class="task-list">
+      <li>What is SaaS? Cloud vs installed software</li>
+      <li>Cloudbeds platform overview &amp; pricing</li>
+      <li>Hospitality-tech vocab: PMS, OTA, RevPAR, Churn</li>
+      <li>How Customer Success works as a career</li>
+      <li>LinkedIn &amp; resume tech translation</li>
+    </ul>
+  </div>
+  <div class="month-card m2" onclick="show(2)">
+    <div class="month-num">Month 02 · Data Layer</div>
+    <div class="month-title">Excel &amp; Sheets</div>
+    <div class="month-theme">"Your P&amp;L instincts, now in a spreadsheet"</div>
+    <ul class="task-list">
+      <li>Google Sheets fundamentals from zero</li>
+      <li>SUM, AVERAGE, IF formulas</li>
+      <li>VLOOKUP — the tool that changed reporting</li>
+      <li>Pivot tables for occupancy/revenue data</li>
+      <li>Build a simple hotel KPI dashboard</li>
+    </ul>
+  </div>
+  <div class="month-card m3" onclick="show(3)">
+    <div class="month-num">Month 03 · Tools Mastery</div>
+    <div class="month-title">CRM + Cloudbeds</div>
+    <div class="month-theme">"Guest profiles became customer accounts"</div>
+    <ul class="task-list">
+      <li>HubSpot CRM free tier — setup &amp; daily use</li>
+      <li>Cloudbeds demo environment hands-on</li>
+      <li>Ticketing basics: Zendesk/Intercom</li>
+      <li>Customer journey mapping (like a stay lifecycle)</li>
+      <li>Intro to churn: why clients cancel software</li>
+    </ul>
+  </div>
+  <div class="month-card m4" onclick="show(4)">
+    <div class="month-num">Month 04 · Core Role Skills</div>
+    <div class="month-title">Customer Success</div>
+    <div class="month-theme">"Turning a new guest into a repeat guest"</div>
+    <ul class="task-list">
+      <li>Onboarding frameworks: 30-60-90 day plans</li>
+      <li>QBR: Quarterly Business Review</li>
+      <li>Health scores — what makes an account at risk</li>
+      <li>Expansion vs upsell in CS roles</li>
+      <li>Mock onboarding call scripts (practice)</li>
+    </ul>
+  </div>
+  <div class="month-card m5" onclick="show(5)">
+    <div class="month-num">Month 05 · Advanced Skills</div>
+    <div class="month-title">Demo &amp; Reporting</div>
+    <div class="month-theme">"Running the floor during a private event"</div>
+    <ul class="task-list">
+      <li>How to run a SaaS product demo</li>
+      <li>Building a client-facing data report</li>
+      <li>Loom for async video communication</li>
+      <li>Portfolio: Cloudbeds walkthrough recording</li>
+      <li>Technical assessment prep for interviews</li>
+    </ul>
+  </div>
+  <div class="month-card m6" onclick="show(6)">
+    <div class="month-num">Month 06 · Launch</div>
+    <div class="month-title">Interview &amp; Apply</div>
+    <div class="month-theme">"Opening night — the prep work is done"</div>
+    <ul class="task-list">
+      <li>Mock interviews: CS + Implementation roles</li>
+      <li>Salary negotiation for remote SaaS</li>
+      <li>Thailand LTR visa requirements &amp; timeline</li>
+      <li>Applications: Cloudbeds, Mews, Guesty, Apaleo</li>
+      <li>Final portfolio review &amp; LinkedIn optimization</li>
+    </ul>
+  </div>
+</div>
+
+<div class="detail-panel" id="panel">
+  <div class="detail-header">
+    <div class="detail-title" id="dtitle"></div>
+    <button class="close-btn" onclick="close_panel()">✕ Close</button>
+  </div>
+  <div class="detail-cols" id="dcontent"></div>
+</div>
+
+<div class="section-label">Program Overview</div>
+<div class="metrics-row">
+  <div class="metric"><span class="metric-val">6</span><div class="metric-lbl">Months to Target Role</div></div>
+  <div class="metric"><span class="metric-val">3+</span><div class="metric-lbl">Target Job Titles</div></div>
+  <div class="metric"><span class="metric-val">$60K</span><div class="metric-lbl">Remote Entry Salary Est.</div></div>
+  <div class="metric"><span class="metric-val">TH</span><div class="metric-lbl">Thailand Base Target</div></div>
+</div>
+
+<div class="conf">Confidence: 9.2/10 — Based on assessment results + resume + cover letter analysis</div>
+
+<script>
+var data = {
+  1:{
+    title:"MONTH 01 — SaaS LITERACY",
+    what:"SaaS = Software-as-a-Service. Instead of buying software once, hotels pay a monthly subscription to access tools like Cloudbeds through a browser. Your job as a CSM (Customer Success Manager) is to make sure they use it well and keep renewing.\n\nImportant: You already use SaaS. Toast POS is SaaS. Cloudbeds is the same concept — hotel room inventory instead of table orders.",
+    skills:["PMS (Property Management System) = the nervous system of a hotel","OTA = Online Travel Agency (Booking.com, Expedia) = OpenTable for hotels","RevPAR = Revenue Per Available Room — your new primary metric","Churn = when a client cancels their subscription (what you prevent)","CSM = Customer Success Manager — your primary target title"],
+    analogy:"You managed a $5M restaurant on Toast POS. Cloudbeds is that same category of tool — but for hotel front desks. You already understand what it feels like from the operator side. Your job is to help hoteliers use it better than you used Toast.",
+    hw:["Create a free Cloudbeds account: cloudbeds.com/demo","Watch 3 Cloudbeds product videos on YouTube","Rewrite your resume title: 'Hospitality Ops Leader | CS & Implementation'","Complete: HubSpot Academy 'What Is SaaS?' (free, 1 hour)"]
+  },
+  2:{
+    title:"MONTH 02 — EXCEL & GOOGLE SHEETS",
+    what:"You already track P&L, labor %, and cost of goods mentally — sometimes on paper. The goal is to move that thinking into software so tech companies can see your work.\n\nWe start with Google Sheets (free, browser-based). Same logic as Excel, easier to share.",
+    skills:["=SUM(B2:B10) — adds a column (you do this mentally already)","=AVERAGE() — finds the average of a range of numbers","=IF(A2>80,\"Over\",\"OK\") — conditional logic: IF this, THEN that","VLOOKUP — connects two tables, like matching bookings to revenue data","Pivot Tables — drag-and-drop report builder from raw data"],
+    analogy:"A Pivot Table is like your weekly labor report — except instead of calculating it by hand, Excel groups the data automatically. You tell it: 'show me revenue by day of week' and it builds the report in 10 seconds. Same output, zero math.",
+    hw:["Open Google Sheets — build a mock 7-day Sales Report with fake revenue numbers","Use SUM and AVERAGE formulas on your own data","Complete: Google Skillshop 'Google Sheets Basics' (free, 2 hours)","Share the sheet for review in our next session"]
+  },
+  3:{
+    title:"MONTH 03 — CRM + CLOUDBEDS HANDS-ON",
+    what:"CRM = Customer Relationship Management. It's a digital guest history card — but for software accounts instead of hotel stays. Every call, email, and milestone gets logged.\n\nWe'll use HubSpot's free CRM to learn the mechanics, then apply that same logic to how Cloudbeds tracks its hotel customers internally.",
+    skills:["HubSpot: create a contact, log a call, set a follow-up reminder","Pipeline view = your floor chart; each stage = a step in the process","Cloudbeds demo: navigate front desk, booking engine, and reports tabs","Zendesk: how a support ticket moves from open to resolved","Customer journey: Awareness → Trial → Onboarding → Renewal → Expansion"],
+    analogy:"Your Travel 4 Love agency tracked client bookings, preferences, and follow-ups. That IS CRM work. HubSpot just formalizes what you were doing manually in notes and your head. You've been doing version 1.0 of this for years.",
+    hw:["Sign up for free HubSpot CRM: crm.hubspot.com","Add 5 fake hotel contacts and build a simple onboarding pipeline","Request a free Cloudbeds demo — tell them you are evaluating for a prospective client","Write a 1-page 'customer journey' for a hotel onboarding onto Cloudbeds"]
+  },
+  4:{
+    title:"MONTH 04 — CUSTOMER SUCCESS FRAMEWORKS",
+    what:"Customer Success = making sure clients get results from software so they renew. Your hospitality background is a real edge here: you know what a hotel actually needs. Most CSMs are pure tech people who have never run a service floor.\n\nThis month you learn the 3 frameworks every CS job description mentions.",
+    skills:["30-60-90 Onboarding Plan: what the client learns each phase post-signup","QBR (Quarterly Business Review): structured meeting showing the client their ROI","Health Score: a numeric rating (like a hotel inspection) that flags at-risk accounts","Success Plan: a written agreement on what 'success' looks like for that client","Expansion: offering additional modules or seats — equivalent to upselling services"],
+    analogy:"A QBR is your monthly P&L review with ownership — except you're presenting it TO the client about their own hotel's Cloudbeds data. You've been on both sides of that table. Now you run the meeting.",
+    hw:["Find 2 CSM job descriptions on LinkedIn — list every skill they mention","Write a mock 30-60-90 onboarding plan for a boutique hotel joining Cloudbeds","Watch: Gainsight YouTube channel — 'Customer Success Fundamentals'","Record yourself doing a 3-minute intro call to a new Cloudbeds hotel client"]
+  },
+  5:{
+    title:"MONTH 05 — DEMO SKILLS & REPORTING",
+    what:"Running a product demo is a core skill for both CS and Implementation roles. You'll walk a client through Cloudbeds features — live on screen — showing them exactly what solves their specific problem.\n\nThis month you produce your first real portfolio piece: a recorded Cloudbeds walkthrough.",
+    skills:["Demo structure: Problem → Solution → Proof → Next Step (never skip the structure)","Loom: free screen + camera recording tool — the async video email of tech sales","Client report: occupancy %, ADR (Average Daily Rate), RevPAR in a Google Sheet","Objection handling during demos — identical mechanics to handling guest complaints","Portfolio item: 5-min Cloudbeds demo video + 1-page hotel performance report"],
+    analogy:"A product demo is a fine dining table presentation — you walk through the menu (features), explain what pairs well (integrations), read their body language for hesitation, and guide them to a decision. You have been running that play for 20 years.",
+    hw:["Download Loom (loom.com) and record a 5-minute Cloudbeds screen walkthrough","Build a mock Monthly Hotel Report in Google Sheets with 3 simple charts","Practice the demo twice: once to a friend, once recorded solo","Upload both to a Google Drive folder — this is the start of your portfolio"]
+  },
+  6:{
+    title:"MONTH 06 — INTERVIEW, APPLY & LAUNCH",
+    what:"You're ready. This month is about converting six months of prep into job offers. We focus on CS and Implementation interview patterns specific to hospitality-tech, remote work logistics for Thailand, and applying with a clear, confident narrative.\n\nTarget companies: Cloudbeds, Mews, Apaleo, Guesty, Hostaway, Little Hotelier.",
+    skills:["STAR method: Situation, Task, Action, Result — your answer format for every question","Technical interview: walking through a CRM or Cloudbeds scenario live on screen","Salary reality: remote CSM entry range = $55K–$75K USD (strong purchasing power in Thailand)","Thailand LTR Visa: Long-Term Resident visa — income threshold ~$80K/yr (plan accordingly)","LinkedIn outreach: direct message CS leaders and hiring managers at target companies"],
+    analogy:"Opening night after months of prep. Every station is set. Your mise en place is complete. You have rehearsed the menu. Now execute the service — calmly, confidently, without improvising. The work is already done.",
+    hw:["Apply to 3 roles per week minimum starting Week 2 of this month","Prepare 5 STAR stories from hospitality — translated into CS and Implementation language","Research Thailand LTR visa: thaiembassy.com (income requirement is critical to plan for)","Request a LinkedIn recommendation from Dina Kuchkuda (regional manager reference)"]
+  }
+};
+
+function show(n){
+  var d = data[n];
+  document.getElementById('dtitle').textContent = d.title;
+  var skills = d.skills.map(function(s){return '<li>'+s+'</li>';}).join('');
+  var hw = d.hw.map(function(h,i){return '<li style="margin-bottom:5px">'+(i+1)+'. '+h+'</li>';}).join('');
+  document.getElementById('dcontent').innerHTML =
+    '<div class="detail-col"><h4>What You\'re Learning &amp; Why</h4><p>'+d.what+'</p>'+
+    '<div class="analogy"><strong>🍽 Hospitality Analogy</strong>'+d.analogy+'</div></div>'+
+    '<div class="detail-col"><h4>Key Skills This Month</h4><ul>'+skills+'</ul>'+
+    '<h4 style="margin-top:14px">Homework / Practice Tasks</h4><ul>'+hw+'</ul></div>';
+  document.getElementById('panel').className = 'detail-panel open';
+  document.querySelectorAll('.month-card').forEach(function(c){c.classList.remove('active');});
+  document.querySelectorAll('.month-card')[n-1].classList.add('active');
+  setTimeout(function(){document.getElementById('panel').scrollIntoView({behavior:'smooth',block:'nearest'});},100);
+}
+function close_panel(){
+  document.getElementById('panel').className = 'detail-panel';
+  document.querySelectorAll('.month-card').forEach(function(c){c.classList.remove('active');});
+}
+</script>
+</body>
+</html>
   </div>
   <div class="badge">Target: Cloudbeds / Hospitality-Tech</div>
 </div>
